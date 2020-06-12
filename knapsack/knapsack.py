@@ -5,10 +5,17 @@ from collections import namedtuple
 
 Item = namedtuple('Item', ['index', 'size', 'value'])
 
-def knapsack_solver(items, capacity):
-    # Your code here
+def knapsack_solver(items, capacity, keyFunc=None):
+  # Your code here
+    if items == 0 or capacity == 0: #base case
+        return 0
+    if Item[items-1] > capacity:
+        return 
+    else:
+      # return max(value[items - 1] + Item - namedtuple([items - 1])
+        pass
 
-    pass
+
 
 
 if __name__ == '__main__':
